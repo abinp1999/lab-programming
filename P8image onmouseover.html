@@ -1,0 +1,30 @@
+<html>
+<body>
+<h1><u><b>Images</u></b></h1><br>
+<h1><p id="name" ></p></h1><br><br>
+<img src="0.jpg" height="500" width="500" id="image" onmouseover="changeimg();" > 
+
+<script type="text/javascript">
+var img=["2.jpg","1.jpg","3.jpg"];
+var na=['Dhoni','Jadeja','KMCT'];
+var i=0;
+var l=img.length;
+function changeimg()
+{
+while(i<l)
+{
+document.getElementById("image").src=img[i];
+document.getElementById("name").innerHTML=na[i];
+i=i+1;
+if(i==5)
+{
+i=0;
+}
+return;
+}
+
+
+}
+</script>
+</body>
+</html>
